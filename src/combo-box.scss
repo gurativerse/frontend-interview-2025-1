@@ -1,0 +1,42 @@
+.combo-box {
+  width: 100%;
+  position: relative;
+
+  input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #d7d9db;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .combo-box-options {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 4px 0 0 0;
+    padding: 0;
+    list-style: none;
+    background: white;
+    border: 1px solid #d7d9db;
+    border-radius: 4px;
+    z-index: 10;
+    box-sizing: border-box;
+
+    .combo-box-option {
+      padding: 8px;
+      cursor: pointer;
+
+      &.selected {
+        background-color: #e4e5e7;
+      }
+    }
+
+    .no-results {
+      padding: 8px;
+      color: #666;
+    }
+  }
+}
